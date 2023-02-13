@@ -13,8 +13,8 @@ public class Yatzy {
      * @deprecated used the constructor with dices. This is just for backward compatibility
      */
     @Deprecated
-    public Yatzy(int d1, int d2, int d3, int d4, int d5) {
-        this(Dice.of(d1), Dice.of(d2), Dice.of(d3), Dice.of(d4), Dice.of(d5));
+    public static Yatzy of(int d1, int d2, int d3, int d4, int d5) {
+        return new Yatzy(Dice.of(d1), Dice.of(d2), Dice.of(d3), Dice.of(d4), Dice.of(d5));
     }
 
     public Yatzy(Dice d1, Dice d2, Dice d3, Dice d4, Dice d5) {
