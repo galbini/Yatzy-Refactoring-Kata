@@ -10,12 +10,12 @@ public class Score {
         this.value = value;
     }
 
-    public Integer getValue() {
-        return value;
+    public static Score of(Integer value) {
+        return new Score(value);
     }
 
-    public static Score of(Integer value){
-        return new Score(value);
+    public Integer getValue() {
+        return value;
     }
 
     @Override

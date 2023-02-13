@@ -10,11 +10,12 @@ public class OneValueScore implements ScoreCategory {
 
     private final List<Dice> dices;
     private final Dice readDice;
+
     public OneValueScore(List<Dice> dices, Dice readDice) {
-        if(dices == null || dices.size() != 5)
+        if (dices == null || dices.size() != 5)
             throw new IllegalArgumentException("we are waiting 5 dices !");
 
-        if(readDice == null)
+        if (readDice == null)
             throw new IllegalArgumentException("readDice is mandatory !");
 
         this.dices = dices;

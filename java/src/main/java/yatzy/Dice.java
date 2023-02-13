@@ -12,12 +12,12 @@ public class Dice implements Comparable<Dice> {
         this.value = value;
     }
 
-    public Integer getValue() {
-        return value;
+    public static Dice of(Integer value) {
+        return new Dice(value);
     }
 
-    public static Dice of(Integer value){
-        return new Dice(value);
+    public Integer getValue() {
+        return value;
     }
 
     @Override
