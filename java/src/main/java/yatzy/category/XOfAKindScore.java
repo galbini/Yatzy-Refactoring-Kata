@@ -23,7 +23,7 @@ public abstract class XOfAKindScore {
         if (numberOfAKind == null)
             throw new IllegalArgumentException("numberOfAKind is mandatory !");
 
-        Map<Dice, Long> frequencies = ScoreHelper.getFrequencyOfEachDiceValue(dices);
+        Map<Dice, Long> frequencies = ScoreUtils.getFrequencyOfEachDiceValue(dices);
 
         Optional<Map.Entry<Dice, Long>> optional = frequencies.entrySet()
             .stream()

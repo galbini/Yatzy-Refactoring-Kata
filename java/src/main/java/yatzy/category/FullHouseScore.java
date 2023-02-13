@@ -19,7 +19,7 @@ public class FullHouseScore implements ScoreCategory {
 
     @Override
     public Score score() {
-        Map<Dice, Long> frequencies = ScoreHelper.getFrequencyOfEachDiceValue(dices);
+        Map<Dice, Long> frequencies = ScoreUtils.getFrequencyOfEachDiceValue(dices);
         if (frequencies.size() == 2) {
             int minFrequency = Collections.min(frequencies.values()).intValue();
             int maxFrequency = Collections.max(frequencies.values()).intValue();

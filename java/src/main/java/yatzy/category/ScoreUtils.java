@@ -6,7 +6,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
 
-public class ScoreHelper {
+public class ScoreUtils {
 
     public static Map<Dice, Long> getFrequencyOfEachDiceValue(List<Dice> dices) {
         if (dices == null || dices.size() != 5)

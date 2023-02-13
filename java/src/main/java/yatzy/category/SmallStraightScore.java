@@ -19,7 +19,7 @@ public class SmallStraightScore implements ScoreCategory {
 
     @Override
     public Score score() {
-        Set<Dice> singleDices = ScoreHelper.getFrequencyOfEachDiceValue(dices).keySet();
+        Set<Dice> singleDices = ScoreUtils.getFrequencyOfEachDiceValue(dices).keySet();
         if (singleDices.size() == 5) {
             Dice minDice = Collections.min(singleDices);
             Dice maxDice = Collections.max(singleDices);

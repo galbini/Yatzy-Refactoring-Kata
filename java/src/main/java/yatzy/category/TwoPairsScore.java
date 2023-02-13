@@ -19,7 +19,7 @@ public class TwoPairsScore implements ScoreCategory {
 
     @Override
     public Score score() {
-        Map<Dice, Long> frequencies = ScoreHelper.getFrequencyOfEachDiceValue(dices);
+        Map<Dice, Long> frequencies = ScoreUtils.getFrequencyOfEachDiceValue(dices);
 
         List<Dice> pairsOfDiceList = frequencies.entrySet()
             .stream()
